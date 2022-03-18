@@ -1,51 +1,47 @@
 !red
-*.color1: #a63d40
-
-!yellow
-*.color2: #e9b872
+*.color1: #FF0000
 
 !green
-*.color3: #90a959
+*.color2: #00FF00
+
+!yellow
+*.color3: #FFFF00
 
 !blue
-*.color4: #6494aa
-
-
-urxvt*scrollBar: false
-urxvt*font: xft:DejaVu Sans Mono:pixelsize=14
+*.color4: #0000FF
 
 *.foreground:   #ffffff
-*.background:   #080b0f
+*.background:   #000000
+! dark blue
+!*.background:   #06090d
 *.cursorColor:  #ffffff
 
 !! Proprietary color scheme.
-!! Unauthorized copying of the scheme strictly
+!! Unauthorized copying of the scheme
 !! prohibited under federal law.
-*color8:        #44a1b5 
-*color9:        #33658a 
-*color10:       #315771 
-*color11:       #2f4858 
-*color12:       #f6ae2d 
-*color13:       #f59c28 
-*color14:       #f48923 
+*color8:        #315771
+*color9:        #44a1b5
+*color10:       #33658a
+*color11:       #406177
+*color12:       #F6AE2D
+*color13:       #FF7700
+*color14:       #06B8B8
 *color15:       #f26419
 
 !--- Window Settings
-Xcursor.size:14
+Xcursor.size:10
 URxvt.buffered:             true
 URxvt.geometry:             85x30
 
 !--- Font Size and Controls
-URxvt*.font:  xft:DejaVu Sans Mono:autohint=true:pixelsize=12
-URxvt.perl-lib:                     ~/.urxvt/ext
-URxvt.keysym.C-Up:     font-size:increase
-URxvt.keysym.C-Down:   font-size:decrease
-URxvt.keysym.C-S-Up:   font-size:incglobal
-URxvt.keysym.C-S-Down: font-size:decglobal
-URxvt.keysym.C-equal:  font-size:reset
-URxvt.keysym.C-slash:  font-size:show
-!URxvt.perl-ext-common: font-size,tabbed,matcher
-URxvt.perl-ext-common: font-size,matcher
+URxvt.perl-lib:          ~/.urxvt/ext
+URxvt.keysym.C-Up:       font-size:increase
+URxvt.keysym.C-Down:     font-size:decrease
+URxvt.keysym.C-S-Up:     font-size:incglobal
+URxvt.keysym.C-S-Down:   font-size:decglobal
+URxvt.keysym.C-equal:    font-size:reset
+URxvt.keysym.C-slash:    font-size:show
+URxvt.perl-ext-common:   font-size,matcher,selection-to-clipboard,paste-clipboard
 
 !--- For Tabs
 URxvt.tabbed.reopen-on-close: yes
@@ -78,34 +74,12 @@ URxvt.keysym.Shift-Control-V: eval:paste_clipboard
 URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 URxvt.iso14755: false
 URxvt.iso14755_52: false
-URxvt.perl-ext-common: selection-to-clipboard
 
-!--- Transparency and effect settings
-! URxvt*inheritPixmap:        true
-! URxvt*transparent:          true
-!--- With Compositor enabled:
-URxvt.depth: 32
-URxvt.background: rgba:0000/0000/0000/bbbb
-
-
-!--- URxvt*shading: 0 to 99 darkens, 101 to 200 lightens
-! URxvt*shading:              20
-URxvt.blurRadius:           40
-URxvt.fading:               0
-! URxvt.tintColor:            #ffffff
-
-!--- Tabbing Menu colors
-
-URxvt.tabbed.tabbar-bg:     0
-URxvt.tabbed.tabbar-fg:     6
-URxvt.tabbed.tab-bg:        0
-URxvt.tabbed.tab-fg:        5
-
-URxvt.cutchars:                     "'*,<>[]{}|-_@:/()│"
-URxvt.font:                         xft:DejaVu Sans Mono:style=Regular:size=13,\
+URxvt.cutchars:                     "',<>[]{}|@:()│"
+URxvt.font:                         xft:DejaVu Sans Mono:style=Regular:size=10,\
                                     xft:IPAGothic:antialias=true,\
                                     xft:DejaVu Serif
-URxvt.boldFont:                     xft:DejaVu Sans Mono:style=Bold,\
+URxvt.boldFont:                     xft:DejaVu Sans Mono:style=Bold:size=10,\
                                     xft:IPAGothic:style=bold:antialias=true,\
                                     xft:DejaVu Sans Mono:style=bold,\
                                     xft:DejaVu Serif:style=bold
