@@ -11,7 +11,7 @@ if [ -x "$(command -v apt-get)" ]; then
   echo "Installing using apt-get"
   sudo apt-get install -y vim zsh git stow
   if [ $1 == "full" ]; then
-    sudo apt-get install -y xscreensaver rxvt-unicode unclutter firefox compton
+    sudo apt-get install -y xscreensaver rxvt-unicode unclutter firefox compton i3
   fi
 elif [ -x "$(command -v yum)" ]; then
   echo "Installing using yum"
@@ -22,7 +22,7 @@ elif [ -x "$(command -v yum)" ]; then
     sudo dnf check-update
     sudo dnf install -y code
     sudo yum check-update
-    sudo yum install -y xscreensaver rxvt-unicode firefox compton
+    sudo yum install -y xscreensaver rxvt-unicode firefox compton i3
   fi
 else
   echo "No supported package manager installed!"
