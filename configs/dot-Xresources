@@ -49,7 +49,7 @@ URxvt.keysym.Control-Shift-Right: perl:tabbedex:move_tab_right
 URxvt.keysym.Control-Shift-R: perl:tabbedex:rename_tab
 
 !--- Make url links clickable
-URxvt.url-launcher: /usr/bin/firefox-esr
+URxvt.url-launcher: /usr/bin/firefox
 URxvt.matcher.button: 1
 URxvt.matcher.rend.0: Uline Bold fg5
 
