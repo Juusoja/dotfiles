@@ -34,14 +34,13 @@ URxvt.buffered:             true
 URxvt.geometry:             85x30
 
 !--- Font Size and Controls
-URxvt.perl-lib:          ~/.urxvt/ext
 URxvt.keysym.C-Up:       font-size:increase
 URxvt.keysym.C-Down:     font-size:decrease
 URxvt.keysym.C-S-Up:     font-size:incglobal
 URxvt.keysym.C-S-Down:   font-size:decglobal
 URxvt.keysym.C-equal:    font-size:reset
 URxvt.keysym.C-slash:    font-size:show
-URxvt.perl-ext-common:   font-size,matcher,selection-to-clipboard,paste-clipboard
+URxvt.perl-ext:   font-size,matcher,selection-to-clipboard,paste-clipboard
 
 !--- For Tabs
 URxvt.tabbed.reopen-on-close: yes
