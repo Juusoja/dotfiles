@@ -7,7 +7,7 @@ fi
 BACKUP = $HOME/dotfiles_backup/
 
 mkdir $HOME/.dotfiles_backup
-mv $HOME/.bashrc $BACKUP
-mv $HOME/.vimrc $BACKUP
-mv $HOME/.gitconfig $BACKUP
-mv $HOME/.i3 $BACKUP
+mv $HOME/.bashrc BACKUP
+mv $HOME/.vimrc BACKUP
+mv $HOME/.gitconfig BACKUP
+mv $HOME/.i3 BACKUP
