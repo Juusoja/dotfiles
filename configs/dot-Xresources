@@ -75,10 +75,10 @@ URxvt.iso14755: false
 URxvt.iso14755_52: false
 
 URxvt.cutchars:                     "',<>[]{}|@:()│"
-URxvt.font:                         xft:DejaVu Sans Mono:style=Regular:size=10,\
+URxvt.font:                         xft:DejaVu Sans Mono:style=Regular:size=14,\
                                     xft:IPAGothic:antialias=true,\
                                     xft:DejaVu Serif
-URxvt.boldFont:                     xft:DejaVu Sans Mono:style=Bold:size=10,\
+URxvt.boldFont:                     xft:DejaVu Sans Mono:style=Bold:size=14,\
                                     xft:IPAGothic:style=bold:antialias=true,\
                                     xft:DejaVu Sans Mono:style=bold,\
                                     xft:DejaVu Serif:style=bold

@@ -158,6 +158,15 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 # lock screen
 bindsym $mod+l exec "i3lock -c 000000"
+# Lock screen
+bindsym $mod+Control+l exec "i3lock -c 00000"
+
+# us kbd - fi kbd
+bindsym $mod+Control+1 exec "setxkbmap fi"
+bindsym $mod+Control+2 exec "setxkbmap us"
+
+bindsym XF86MonBrightnessUp exec light -A 1 # increase screen brightness
+bindsym XF86MonBrightnessDown exec light -U 1 # decrease screen brightness
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
