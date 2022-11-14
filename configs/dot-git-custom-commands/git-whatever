@@ -1,0 +1,2 @@
+#!/bin/bash
+LIST=$(git status | grep "modified:   " | cut -f4 -d " ") && git restore $LIST
