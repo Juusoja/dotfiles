@@ -82,3 +82,11 @@ URxvt.boldFont:                     xft:DejaVu Sans Mono:style=Bold:size=14,\
                                     xft:IPAGothic:style=bold:antialias=true,\
                                     xft:DejaVu Sans Mono:style=bold,\
                                     xft:DejaVu Serif:style=bold
+
+Section "InputClass"
+    Identifier "My Mouse"
+    Driver "libinput"
+    MatchIsPointer "yes"
+    Option "AccelProfile" "flat"
+    Option "AccelSpeed" "0"
+EndSection
