@@ -1,19 +1,17 @@
 !red
-*.color1: #FF0000
+*.color1: #E01010
 
 !green
-*.color2: #00FF00
+*.color2: #10E010
 
 !yellow
-*.color3: #FFFF00
+*.color3: #C8C828
 
 !blue
-*.color4: #0000FF
+*.color4: #2828C8
 
-*.foreground:   #ffffff
+*.foreground:   #e8e8e8
 *.background:   #000000
-! dark blue
-!*.background:   #06090d
 *.cursorColor:  #ffffff
 
 !! Proprietary color scheme.
@@ -21,12 +19,12 @@
 !! prohibited under federal law.
 *color8:        #315771
 *color9:        #44a1b5
-*color10:       #33658a
+*color10:       #0c5882
 *color11:       #406177
 *color12:       #F6AE2D
 *color13:       #FF7700
 *color14:       #06B8B8
-*color15:       #f26419
+*color15:       #F58822
 
 !--- Window Settings
 Xcursor.size:10
@@ -51,11 +49,11 @@ URxvt.keysym.Control-Shift-R: perl:tabbedex:rename_tab
 !--- Make url links clickable
 URxvt.url-launcher: /usr/bin/firefox
 URxvt.matcher.button: 1
-URxvt.matcher.rend.0: Uline Bold fg5
+URxvt.matcher.rend.0: Uline Bold fg8
 
 !--- Scrolling
 URxvt*.scrollTtyOutput:     false
-URxvt*.scrollWithBuffer:    false
+URxvt*.scrollWithBuffer:    true
 URxvt*.scrollTtyKeypress:   true
 URxvt.secondaryScroll:      true
 URxvt*scrollstyle:          plain
@@ -74,7 +72,7 @@ URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 URxvt.iso14755: false
 URxvt.iso14755_52: false
 
-URxvt.cutchars:                     "',<>[]{}|@:()│"
+URxvt.cutchars:                     "',<>[]{}|@:()│/ $"
 URxvt.font:                         xft:DejaVu Sans Mono:style=Regular:size=14,\
                                     xft:IPAGothic:antialias=true,\
                                     xft:DejaVu Serif
