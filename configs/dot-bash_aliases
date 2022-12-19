@@ -1,4 +1,4 @@
-alias bip='speaker-test -t sine -f 1000 -l 1 & sleep .1 && kill -9 $!'
+alias bip='(speaker-test -t sine -f 1000 -l 1 & sleep .1 && kill -9 $!)'
 alias audiors='pulseaudio -k && sudo alsa force-reload'
 alias laptopoff='xrandr --output eDP-1-1 --off'
 alias laptopon='xrandr --output eDP-1-1 --mode 1920x1080 --rate 60.00'
