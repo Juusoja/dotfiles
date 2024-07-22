@@ -1,17 +1,18 @@
 alias bip='(speaker-test -t sine -f 1000 -l 1 & sleep .1 && kill -9 $!)'
 alias audiors='pulseaudio -k && sudo alsa force-reload'
-alias laptopathome='xrandr --output HDMI-1-2 --mode 1920x1200 --primary --output eDP-1-1 --mode 1920x1080 --left-of HDMI-1-2'
+alias laptopathome='xrandr --output HDMI-1-2 --mode 1920x1080 --primary --output eDP-1-1 --mode 1920x1080 --left-of HDMI-1-2'
 alias laptopoff='xrandr --output eDP-1-1 --off'
 alias laptopon='xrandr --output eDP-1-1 --mode 1920x1080 --rate 60.00'
-alias desktopon='xrandr --output HDMI-1-2 --mode 1920x1200 --rate 60.00'
+alias desktopon='xrandr --output HDMI-1-2 --mode 1920x1080 --rate 60.00'
 alias hdmion='xrandr --output HDMI-1-2 --mode 1920x1080 --rate 60.00'
+alias hdmion2k='xrandr --output HDMI-1-2 --mode 2560x1440 --rate 60.00'
 alias desktopoff='xrandr --output HDMI-1-2 --off'
 alias suspend='i3lock -c 000000 ; systemctl suspend'
 alias lock='i3lock -c 000000'
 alias pubcat='cat ~/.ssh/id_rsa.pub'
 alias rsscreen='sudo systemctl restart display-manager'
 alias wakeld='wakeonlan -i ld 00:25:90:a5:25:2a'
-alias menu='firefox https://ultimes.fi/palvelut/ravintolapalvelut/viikon-menu/'
+alias toimisto='nmcli connection up hel-gw1-UDP4-1194'
 
 # git
 alias ga='LIST=$(git status | grep "modified:   " | cut -f4 -d " ") && git add $LIST'
@@ -19,3 +20,5 @@ alias gr='LIST=$(git status | grep "modified:   " | cut -f4 -d " ") && git resto
 alias grs='LIST=$(git status | grep "modified:   " | cut -f4 -d " ") && git restore $LIST'
 alias gs='git status'
 alias gd='git diff'
+
+alias kooha='flatpak run io.github.seadve.Kooha'

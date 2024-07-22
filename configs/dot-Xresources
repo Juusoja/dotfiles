@@ -72,6 +72,7 @@ URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
 URxvt.iso14755: false
 URxvt.iso14755_52: false
 
+
 URxvt.cutchars:                     "',<>[]{}|@:()│/ $"
 URxvt.font:                         xft:DejaVu Sans Mono:style=Regular:size=14,\
                                     xft:IPAGothic:antialias=true,\
